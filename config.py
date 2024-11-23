@@ -1,0 +1,26 @@
+import os
+connectstring="mongodb://localhost:27017"
+database="ServerData"
+hostname="localhost"
+port=27017
+collections=["Containers","Services","History","Websites","WebsiteHistory","ServerPerformance","ServicesAndContainersUp","Upduration","UserRegister","SuggestedSerAndCont","Packages","Servers","ServicesAndContainers","Subscription","Subscription History","JWTrevokedtoken"]
+usrpassword='c954dc2b074f80eb0c91b8257344e89e-52d193a0-5009394d'
+usremail='donotreply@alerts.businesswithgems.com'
+receiveremail='umairjaffar@knowpakistan.org'
+senderemail='Server Monitor <donotreply@alerts.businesswithgems.com>'
+stmpserv='smtp.mailgun.org'
+serverfile='D:\Python_Projects\PkTeamsProjects\ProjectPkTeams\python and server sh\server.txt' 
+stmpport=587
+SECRET_SALT_KEY=os.getenv("SECRET_PASSWORD_SALT")
+key='base32secret3232'
+client_id = 'AX58NppkZ0QfVjDIBAbrZIkjFJzKeMzPbbGgUNpP-PzfFcwX7zt4z3Wr7sjXQI3gOTQBNaHaO4QnEdpR'
+client_secret = 'EBOZ6a-k9Ld-V_ySThug3mhLHH2XRZXvgXMTkLvfQbGlFp0ZrrbgpJllVXMqlg13eV8Zc1KrPhguUAwC'
+prodid="PROD-3VE92635TU164114C"
+servermonitorfp='D:\Python_Projects\PkTeamsProjects\ProjectPkTeams\servermonitorcreatedscript.sh'
+serverfilefp='D:\Python_Projects\PkTeamsProjects\ProjectPkTeams\servermonitorbashscript.sh'
+serverperformancemonitorfp='D:\Python_Projects\PkTeamsProjects\ProjectPkTeams\serverperformancecreatedscript.sh'
+serverperformancefp='D:\Python_Projects\PkTeamsProjects\ProjectPkTeams\serverperformancebashscript.sh'
+usrserverbashscript='D:\\Python_Projects\\PkTeamsProjects\\ProjectPkTeams\\python and server sh\\User server bash script\\bashscript.zip'
+plansurl='https://api-m.sandbox.paypal.com/v1/billing/plans'
+svrdownurl="http://127.0.0.1:5000/contserv-down"
+svrperformurl="http://127.0.0.1:5000/serverperformance"

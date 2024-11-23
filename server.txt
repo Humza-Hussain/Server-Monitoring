@@ -1,0 +1,2 @@
+2 23.45.56.67 svr1 appache,torjent,mysql postrsql,mongodb,sql
+2 66.77.98.44 svr2 torjent,mysql,redit postrsql,mongodb,sql
