@@ -2,8 +2,8 @@
 
 # CPU usage
 endpoint="http://127.0.0.1:5000/serverperformance"
-svip="104.225.220.116"
-servername="server.businesswithgems.com"
+svip=""
+servername="Sharjeel-badmash"
 cpu_cores=$(grep -c processor /proc/cpuinfo)
 cpu_total=100
 list_cores=""
@@ -45,7 +45,5 @@ getent group sudo | cut -d: -f4 | tr ',' '\n'
 # Number of running processes
 process_count=$(ps -e | wc -l)
 echo "Number of Running Processes: $((process_count-1))"
-#curl -X POST -H "Content-Type: application/json" -d "{\"mem_used_percent\": \"$mem_used_percent\",\" disk_used_percent\":\"$disk_used_percent\",\"process_count\":\"$process_count\"}" "$endpoint"
-curl -X POST -H "Content-Type: application/json" -d "{\"mem_used_percent\": \"$mem_used_percent\", \"disk_used_percent\": \"$disk_used_percent\", \"process_count\": \"$process_count\",\"list_cores\": \" $list_cores\",\"svip\": \" $svip\",\"servername\": \" $servername\",\"numb_user\": \" $numb_user\" }" "$endpoint"
 echo $list_cores
 echo "Success" 
