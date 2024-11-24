@@ -1,6 +1,6 @@
 #!/bin/bash
-svip="104.225.216.59"
-servername="schainserver3.comocrm.com"
+svip="Wakeel-Anty"
+servername="LCD-Masjid"
 owner_id="2"
 services=("apache2" "nginx")
 containers=("phpadmin" "mysq_server2")
@@ -57,5 +57,4 @@ done
 
 # Send a HTTP POST request to the Flask endpoint
 if [ ! -z "$lst_down_service" ] || [ ! -z "$lst_down_container" ]; then
-  curl -X POST -H "Content-Type: application/json" -d "{\"service\": \"$lst_down_service\", \"container\": \"$lst_down_container\", \"status\": \"$status\", \"container_status\": \"$container_down\", \"svip\": \"$svip\", \"servername\": \"$servername\", \"owner_id\": \"$owner_id\"}" "$endpoint"
 fi
